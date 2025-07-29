@@ -1,0 +1,31 @@
+{
+  "plots": [
+    {
+      "title": "Roll Over Time",
+      "x_label": "Time (s)",
+      "y_label": "Roll (degrees)",
+      "metric": "roll",
+      "show_points": true,
+      "line_color": [255, 100, 100],
+      "csv_path": "data/test.csv"
+    },
+    {
+      "title": "Pitch Over Time",
+      "x_label": "Time (s)",
+      "y_label": "Pitch (degrees)",
+      "metric": "pitch",
+      "show_points": true,
+      "line_color": [255, 100, 100],
+      "csv_path": "data/test.csv"
+    },
+    {
+      "title": "Yaw Over Time",
+      "x_label": "Time (s)",
+      "y_label": "Yaw (degrees)",
+      "metric": "yaw",
+      "show_points": true,
+      "line_color": [255, 100, 100],
+      "csv_path": "data/test.csv"
+    }
+  ]
+}
