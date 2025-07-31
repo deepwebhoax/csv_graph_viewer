@@ -7,7 +7,7 @@
       "metric": "roll",
       "show_points": true,
       "line_color": [255, 100, 100],
-      "csv_path": "data/test.csv"
+      "csv_path": "../data/test.csv"
     },
     {
       "title": "Pitch Over Time",
@@ -16,7 +16,7 @@
       "metric": "pitch",
       "show_points": true,
       "line_color": [255, 100, 100],
-      "csv_path": "data/test.csv"
+      "csv_path": "../data/test.csv"
     },
     {
       "title": "Yaw Over Time",
@@ -25,7 +25,7 @@
       "metric": "yaw",
       "show_points": true,
       "line_color": [255, 100, 100],
-      "csv_path": "data/test.csv"
+      "csv_path": "../data/test.csv"
     }
   ]
 }
