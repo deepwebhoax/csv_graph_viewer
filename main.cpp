@@ -14,7 +14,7 @@
 
 
 int main(int argc, char** argv) {
-    ImVec2 window_dims = ImVec2(1600, 900);
+    ImVec2 window_dims = ImVec2(1600, 1000);
     ImVec2i window_pos;
     SDL_Init(SDL_INIT_VIDEO);
     SDL_Window* window = SDL_CreateWindow(
@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 
     ImGui::StyleColorsDark();
     ImGui::SetNextWindowCollapsed(false, ImGuiCond_Always);
-    ImGui::SetNextWindowPos(ImVec2(window_pos.y, window_pos.x), ImGuiCond_Always);
+    ImGui::SetNextWindowPos(ImVec2(50, 50), ImGuiCond_Always);
     ImGui_ImplSDL3_InitForSDLRenderer(window, renderer);
     ImGui_ImplSDLRenderer3_Init(renderer);
 
@@ -54,6 +54,7 @@ int main(int argc, char** argv) {
         ImGui_ImplSDL3_NewFrame();
         ImGui::NewFrame();
         // ImGui::ShowDemoWindow();
+        // ImPlot::ShowDemoWindow();
 
         RenderPlots(configs, loadedCSVs);
 

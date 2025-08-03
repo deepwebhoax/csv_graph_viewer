@@ -8,6 +8,7 @@ A simple desktop application using SDL3 + ImGui + ImPlot to visualize CSV data o
 - Plot CSV time-series data with ImPlot.
 - Dockable GUI with ImGui.
 - Customizable metrics and styles.
+- Graph views synchronized by time.
 
 ## Required Files
 
