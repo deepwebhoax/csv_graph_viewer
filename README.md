@@ -16,11 +16,19 @@ A simple desktop application using SDL3 + ImGui + ImPlot to visualize CSV data o
 
 ## Build Instructions
 
+First, install SDL3.
+
 ```bash
+sudo pacman -S sdl3
+```
+
+Then clone this repository with submodules, build using cmake and run.
+
+`````bash
 git clone --recurse-submodules <repo>
 cd csv_graph_viewer
 mkdir build && cd build
 cmake ..
 cmake --build .
 ./csv_graph_viewer
-```
+`````
