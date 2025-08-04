@@ -9,8 +9,14 @@ void RenderPlots(const std::vector<PlotConfig>& configs,
 
     // ── render plots ───────────────────────────────────────────────────────────
     for (const auto& cfg : configs) {
+        size_t i = 0;
+        std::string win_name = cfg.title + "###" + cfg.metric;
+        bool open = true;
+        ImGui::Begin(win_name.c_str(), &open,
+                     ImGuiWindowFlags_None);
+
         const auto& data = loadedCSVs.at(cfg.csv_path);
-        if (!have_limits && !data.time.empty()) {          // one-time init
+        if (!have_limits && !data.time.empty()) {
             shared_x_min       = data.time.front();
             shared_x_max       = data.time.back();
             have_limits = true;
@@ -29,5 +35,6 @@ void RenderPlots(const std::vector<PlotConfig>& configs,
             }
             ImPlot::EndPlot();
         }
+        ImGui::End();
     }
 }

@@ -37,9 +37,9 @@
       "csv_path": "../data/test.csv"
     },
     {
-      "title": "Battery Voltage Over Time",
+      "title": "Battery Over Time",
       "x_label": "Time (s)",
-      "y_label": "Battery Voltage (V)",
+      "y_label": "Battery (%)",
       "metric": "battery",
       "show_points": true,
       "line_color": [0, 0, 255],
