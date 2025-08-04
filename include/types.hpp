@@ -16,6 +16,6 @@ struct PlotConfig {
 };
 
 struct CSVData {
-    std::vector<float> time;
-    std::map<std::string, std::vector<float>> metrics;
+    std::vector<double> time;
+    std::map<std::string, std::vector<double>> metrics;
 };

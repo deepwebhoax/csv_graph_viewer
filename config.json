@@ -5,7 +5,7 @@
       "x_label": "Time (s)",
       "y_label": "Roll (degrees)",
       "metric": "roll",
-      "show_points": true,
+      "show_points": false,
       "line_color": [255, 100, 100],
       "csv_path": "../data/test.csv"
     },
@@ -14,7 +14,7 @@
       "x_label": "Time (s)",
       "y_label": "Pitch (degrees)",
       "metric": "pitch",
-      "show_points": true,
+      "show_points": false,
       "line_color": [255, 100, 100],
       "csv_path": "../data/test.csv"
     },
@@ -23,8 +23,35 @@
       "x_label": "Time (s)",
       "y_label": "Yaw (degrees)",
       "metric": "yaw",
-      "show_points": true,
+      "show_points": false,
       "line_color": [255, 100, 100],
+      "csv_path": "../data/test.csv"
+    },
+    {
+      "title": "Altitude Over Time",
+      "x_label": "Time (s)",
+      "y_label": "Altitude (degrees)",
+      "metric": "altitude",
+      "show_points": true,
+      "line_color": [255, 255, 255],
+      "csv_path": "../data/test.csv"
+    },
+    {
+      "title": "Battery Voltage Over Time",
+      "x_label": "Time (s)",
+      "y_label": "Battery Voltage (V)",
+      "metric": "battery",
+      "show_points": true,
+      "line_color": [0, 0, 255],
+      "csv_path": "../data/test.csv"
+    },
+    {
+      "title": "Load Over Time",
+      "x_label": "Time (s)",
+      "y_label": "Load (kg)",
+      "metric": "load",
+      "show_points": true,
+      "line_color": [255, 255, 255],
       "csv_path": "../data/test.csv"
     }
   ]
